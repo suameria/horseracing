@@ -163,6 +163,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ScrapingServiceProvider::class, // スクレイピング用
+        App\Providers\NetkeibaServiceProvider::class, // Netkeiba用
+        App\Providers\RepositoryServiceProvider::class, // リポジトリ用
 
     ],
 
