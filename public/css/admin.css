@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2018/05/04, 0:47:18
+    Author     : arai
+*/
+
+.width35 {
+    width: 35px;
+}
+
+.width45 {
+    width: 45px;
+}
+
+.width55 {
+    width: 55px;
+}
+
+.width65 {
+    width: 65px;
+}
+
+.width70 {
+    width: 70px;
+}
+
+.width85 {
+    width: 85px;
+}
+
+.width100 {
+    width: 100px;
+}
+
+.width150 {
+    width: 150px;
+}
+
+.width180 {
+    width: 190px;
+}
+
+.width200 {
+    width: 200px;
+}
+
+.width250 {
+    width: 250px;
+}
+
+.width300 {
+    width: 300px;
+}
+
+.width350 {
+    width: 350px;
+}
+
+.width430 {
+    width: 430px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: calc(0.5px + 18px);
+  font-size: 11px;
+}
+
+select.form-control.select-year:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
+  width: 75px;
+  font-size: 16px;
+  margin: 1px 18px;
+}
+
+.table td, .table th {
+    padding: 5px 5px;
+    vertical-align: middle;
+}
+
+.pillar-badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    border: 0.5px solid #7f7f7f;
+}
+
+.first-bg-color {
+    background: #fffbe5;
+}
+
+.second-bg-color {
+    background: #f5fbff;
+}
+
+.third-bg-color {
+    background: #fff8f8;
+}
