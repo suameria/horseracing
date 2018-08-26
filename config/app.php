@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Tokyo',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ja',
 
     /*
     |--------------------------------------------------------------------------
@@ -151,6 +151,9 @@ return [
          * Package Service Providers...
          */
         Weidner\Goutte\GoutteServiceProvider::class, // スクレイピング用パッケージ
+        Collective\Html\HtmlServiceProvider::class, // FORMファサードパッケージ
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class, // IDEパッケージ
+        Barryvdh\Debugbar\ServiceProvider::class, // デバッグバーパッケージ
 
         /*
          * Application Service Providers...
@@ -160,6 +163,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ScrapingServiceProvider::class, // スクレイピング用
+        App\Providers\NetkeibaServiceProvider::class, // Netkeiba用
+        App\Providers\RepositoryServiceProvider::class, // リポジトリ用
 
     ],
 
@@ -209,7 +215,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Form' => Collective\Html\FormFacade::class, // FORMファサードパッケージ
+        'Html' => Collective\Html\HtmlFacade::class, // FORMファサードパッケージ
         'Goutte' => Weidner\Goutte\GoutteFacade::class, // スクレイピング用パッケージ
+        'Debugbar' => Barryvdh\Debugbar\Facade::class, // デバッグバー
 
     ],
 
